@@ -12,8 +12,7 @@ def browserInstance(request):
         driver = webdriver.Chrome()
     if browser_name == "firefox":
         driver = webdriver.Firefox()
-
     driver.maximize_window()
-    driver.implicitly_wait(4)
+    driver.implicitly_wait(5)
     yield driver
     driver.close()

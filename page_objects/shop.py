@@ -23,6 +23,7 @@ class ShopPage:
             productName = product.find_element(*self.product_name).text
             print(productName)
             if productName == 'Blackberry':
+                print("The element was found")
                 product.find_element(*self.addBtn).click()
                 break
 
